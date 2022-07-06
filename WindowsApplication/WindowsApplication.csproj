@@ -65,6 +65,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Update="StartSessionUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ChatUserControl.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
