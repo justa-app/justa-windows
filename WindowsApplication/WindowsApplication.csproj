@@ -64,4 +64,10 @@
     </Resource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="ChatUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+
 </Project>

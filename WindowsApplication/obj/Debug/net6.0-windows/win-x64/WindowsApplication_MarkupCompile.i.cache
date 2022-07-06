@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\projects\desktop-win-app-dev\WindowsApplication\obj\Debug\net6.0-windows\win-x64\
+C:\projects\justa-windows\WindowsApplication\obj\Debug\net6.0-windows\win-x64\
 WindowsApplication
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\projects\desktop-win-app-dev\WindowsApplication\App.xaml
-41638061281
+C:\projects\justa-windows\WindowsApplication\App.xaml
+52011674557
 1125282475
-20-1790137349
+21-2030267910
 204150365500
-ExpertContent.xaml;MainWindow.xaml;PresentationControl.xaml;Views\RelevantDocumentView.xaml;
+ChatUserControl.xaml;ExpertContent.xaml;MainWindow.xaml;PresentationControl.xaml;Views\RelevantDocumentView.xaml;
 
 False
 

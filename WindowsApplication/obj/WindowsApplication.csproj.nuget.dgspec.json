@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\desktop-win-app-dev\\WindowsApplication\\WindowsApplication.csproj": {}
+    "C:\\projects\\justa-windows\\WindowsApplication\\WindowsApplication.csproj": {}
   },
   "projects": {
-    "C:\\projects\\desktop-win-app-dev\\WindowsApplication\\WindowsApplication.csproj": {
+    "C:\\projects\\justa-windows\\WindowsApplication\\WindowsApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\desktop-win-app-dev\\WindowsApplication\\WindowsApplication.csproj",
+        "projectUniqueName": "C:\\projects\\justa-windows\\WindowsApplication\\WindowsApplication.csproj",
         "projectName": "WindowsApplication",
-        "projectPath": "C:\\projects\\desktop-win-app-dev\\WindowsApplication\\WindowsApplication.csproj",
+        "projectPath": "C:\\projects\\justa-windows\\WindowsApplication\\WindowsApplication.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\desktop-win-app-dev\\WindowsApplication\\obj\\",
+        "outputPath": "C:\\projects\\justa-windows\\WindowsApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
