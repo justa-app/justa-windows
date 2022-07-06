@@ -23,6 +23,7 @@
     <None Remove="Assets\JustaSleep.png" />
     <None Remove="Assets\person-icon-expert.png" />
     <None Remove="Assets\SharePoint_logo.png" />
+	<None Remove="Assets\ArrowButton.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -62,6 +63,9 @@
     <Resource Include="Assets\SharePoint_logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+	<Resource Include="Assets\ArrowButton.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
   </ItemGroup>
 
   <ItemGroup>

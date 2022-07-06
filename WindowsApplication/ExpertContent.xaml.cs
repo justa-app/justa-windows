@@ -20,9 +20,17 @@ namespace WindowsApplication
     /// </summary>
     public partial class ExpertContent : UserControl
     {
+        StartSessionUserControl startSessionControl;
+
         public ExpertContent()
         {
             InitializeComponent();
+        }
+
+        private void StartSessionButton_Click(object sender, RoutedEventArgs e)
+        {
+            startSessionControl = new StartSessionUserControl();
+            startSessionControl.Visibility = Visibility.Visible;
         }
     }
 }
