@@ -31,7 +31,7 @@
                        VerticalAlignment="Center"
                        FontWeight="Bold"/>
 
-                <Button x:Name="StartSessionButton" Background="Transparent" Click="StartSessionButton_Click">
+                <Button x:Name="StartSessionButton" Background="Transparent" Click="StartSessionButton_Click" BorderThickness="0">
                     <Border Padding="0"
                         CornerRadius="24"
                         Width="105"
@@ -63,7 +63,7 @@
               HorizontalAlignment="Right"
               Fill="#261977"/>
 
-       <local:StartSessionUserControl Visibility="Hidden"/>    
+      <!-- <local:StartSessionUserControl Visibility="Hidden"/>    -->
     </Grid>
 
     

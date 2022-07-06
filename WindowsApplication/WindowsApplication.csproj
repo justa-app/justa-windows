@@ -24,6 +24,8 @@
     <None Remove="Assets\person-icon-expert.png" />
     <None Remove="Assets\SharePoint_logo.png" />
 	<None Remove="Assets\ArrowButton.png" />
+	<None Remove="Assets\bubble-chat.png" />
+	<None Remove="Assets\StartArrow.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -65,6 +67,12 @@
     </Resource>
 	<Resource Include="Assets\ArrowButton.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="Assets\StartArrow.png">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="Assets\bubble-chat.png">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</Resource>
   </ItemGroup>
 
