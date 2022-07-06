@@ -2,5 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/WindowsApplication/FileContentIndex
-/WindowsApplication/obj/Debug/net6.0-windows/win-x64/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+/WindowsApplication/obj/Debug
+/.vs
+/WindowsApplication/bin/Debug
