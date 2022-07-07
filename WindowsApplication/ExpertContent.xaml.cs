@@ -28,10 +28,11 @@ namespace WindowsApplication
         }
 
         private void StartSessionButton_Click(object sender, RoutedEventArgs e)
-        {            
+        {
+            Window mainWindow = Application.Current.MainWindow;
+            mainWindow.Hide();
             startSessionControl = new StartSessionUserControl();
             startSessionControl.Show();
-
         }
     }
 }
