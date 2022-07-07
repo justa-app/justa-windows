@@ -1,4 +1,4 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
 
 
 namespace WindowsApplication
@@ -6,7 +6,7 @@ namespace WindowsApplication
     /// <summary>
     /// Interaction logic for StartSessionUserControl.xaml
     /// </summary>
-    public partial class StartSessionUserControl : UserControl
+    public partial class StartSessionUserControl : Window
     {
         public StartSessionUserControl()
         {
