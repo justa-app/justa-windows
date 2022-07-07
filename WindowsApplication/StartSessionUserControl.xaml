@@ -15,27 +15,27 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="562" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="474"/>
+            <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
 
 
         <Border Padding="12"
-                Margin="0 0 0 0"
+                Margin="0,0,-31,19"
                 BorderThickness="0"
                 CornerRadius="18"
-                Background="#4676EB"
+                Background="#4676EB" Grid.RowSpan="2"
                 >
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                     <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
@@ -44,41 +44,39 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="12,4">
+                <StackPanel Orientation="Horizontal" Grid.Row="0">
                     <Image Source="pack://application:,,,/Assets/person-icon-expert.png" 
                            VerticalAlignment="Center" 
                            Height="25" Width="25" />
                     <Label Content="Start your session!"
-                       Margin="10,0,150,0"
+                       Margin="0,0,30,0"
                        FontFamily="Roboto"
                        Foreground="White"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"                      
-                       FontSize="24"/>
-                    
-                    <Button Width="24" Height="20">
-                        <Button.Background>
-                            <ImageBrush ImageSource="pack://application:,,,/Assets/ArrowButton.png"/>
-                        </Button.Background>
-                    </Button>
+                       FontSize="18"/>
+
+                    <Image Source="pack://application:,,,/Assets/ArrowButton.png"
+                           Width="24" Height="20" Margin="60,0"/>
+
                 </StackPanel>
-                <Line Grid.Row="1" StrokeThickness="4" Stroke="White" Margin="0,10" X1="50" X2="474"/>
+                <Line Grid.Row="1" StrokeThickness="4" Stroke="White" Margin="0,10" X1="30" X2="310"/>
                 <Label Grid.Row="2"
                        Content="Please type your question"
-                       Padding="51,46,61,10"
+                       Margin="25,10,0,4"
                        FontFamily="Roboto"
                        Foreground="White"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"
                        FontWeight="SemiBold"
-                       FontSize="18"/>
+                       FontSize="14"/>
 
-                <StackPanel Grid.Row="3" Orientation="Vertical" Background="White" Margin="50,0">
+                <StackPanel Grid.Row="3" Orientation="Vertical" Background="White" Margin="12,0,12,10" Width="250">
                     <TextBox
-                           Height="152" 
-                           Width="352" 
+                           Height="117" 
+                           Width="250" 
                            Background="White"
-                           Padding="61,18,61,0"
+                           Padding="0,18,0,0"
                            Foreground="LightGray"
                            Text=" Hi, I'm looking for information on ..."
                            TextAlignment="Justify" 
@@ -86,7 +84,7 @@
                            HorizontalAlignment="Stretch"
                            BorderThickness="0" />
                     <Button x:Name="Start" 
-                            Width="315" 
+                            Width="124" 
                             Height="42" 
                             Background="#4676EB" 
                             Margin="18,15"                            
@@ -99,7 +97,7 @@
                 </StackPanel>
                 <Image Grid.Row="4"
                     Source="pack://application:,,,/Assets/bubble-chat.png" 
-                    Width="153" Height="153" Margin="10"/>
+                    Width="103" Height="103" Margin="10" RenderTransformOrigin="0.526,1.108"/>
             </Grid>
 
         </Border>

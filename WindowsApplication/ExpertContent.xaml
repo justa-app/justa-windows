@@ -63,8 +63,6 @@
               HorizontalAlignment="Right"
               Fill="#261977"/>
 
-      <!-- <local:StartSessionUserControl Visibility="Hidden"/>    -->
     </Grid>
 
-    
 </UserControl>
