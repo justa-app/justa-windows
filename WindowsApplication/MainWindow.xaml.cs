@@ -83,6 +83,7 @@ namespace WindowsApplication
                     Visibility.Hidden :
                     Visibility.Visible;
             _model.NewData = false;
+            Application.Current.Windows.OfType<Window>().ToList().ForEach(w => w.Hide());
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
