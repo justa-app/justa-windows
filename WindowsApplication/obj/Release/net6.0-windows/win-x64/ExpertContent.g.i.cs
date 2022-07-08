@@ -62,7 +62,7 @@ namespace WindowsApplication {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WindowsApplication;component/expertcontent.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WindowsApplication;V1.0.0.0;component/expertcontent.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ExpertContent.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

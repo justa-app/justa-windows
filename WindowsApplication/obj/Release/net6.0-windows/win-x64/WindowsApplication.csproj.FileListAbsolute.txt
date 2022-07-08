@@ -505,9 +505,7 @@ C:\projects\justa-windows\WindowsApplication\bin\Release\net6.0-windows\win-x64\
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\WindowsApplication.csproj.AssemblyReference.cache
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\Interop.UIAutomationClient.dll
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\WindowsApplication.csproj.ResolveComReference.cache
-C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ChatUserControl.baml
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\StartSessionUserControl.baml
-C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ChatUserControl.g.cs
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ExpertContent.g.cs
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\MainWindow.g.cs
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\PresentationControl.g.cs
@@ -534,3 +532,5 @@ C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\WindowsApplication.pdb
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\WindowsApplication.genruntimeconfig.cache
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ref\WindowsApplication.dll
+C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ChatWindow.baml
+C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ChatWindow.g.cs

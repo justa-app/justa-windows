@@ -87,7 +87,8 @@
                             Width="124" 
                             Height="42" 
                             Background="#4676EB" 
-                            Margin="18,15"                            
+                            Margin="18,15"  
+                            Click="Start_Click"
                             >
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" >
                             <Image Source="pack://application:,,,/Assets/StartArrow.png" Width="18" Height="15" Margin="10,0"/>

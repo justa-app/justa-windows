@@ -26,6 +26,12 @@
 	<None Remove="Assets\ArrowButton.png" />
 	<None Remove="Assets\bubble-chat.png" />
 	<None Remove="Assets\StartArrow.png" />
+	<None Remove="Assets\expert.png" />
+	<None Remove="Assets\blue-arrow.png" />
+	<None Remove="Assets\expert-chat.png" />
+	<None Remove="Assets\clip.png" />
+	<None Remove="Assets\at.png" />
+	<None Remove="Assets\send.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -74,15 +80,34 @@
 	<Resource Include="Assets\bubble-chat.png">
 		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</Resource>
+	<Resource Include="Assets\expert.png">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="Assets\blue-arrow.png">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="Assets\expert-chat.png">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="Assets\at.png">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="Assets\clip.png">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
+	<Resource Include="Assets\send.png">
+		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="StartSessionUserControl.xaml">
+    <Page Update="ChatWindow.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ChatUserControl.xaml">
+    <Page Update="StartSessionUserControl.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
 

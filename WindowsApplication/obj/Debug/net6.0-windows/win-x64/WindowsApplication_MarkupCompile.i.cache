@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\projects\justa-windows\WindowsApplication\App.xaml
-61218019983
+61677321283
 1125282475
-231200896051
+23170249191
 204150365500
-ChatUserControl.xaml;ExpertContent.xaml;MainWindow.xaml;PresentationControl.xaml;StartSessionUserControl.xaml;Views\RelevantDocumentView.xaml;
+ChatWindow.xaml;ExpertContent.xaml;MainWindow.xaml;PresentationControl.xaml;StartSessionUserControl.xaml;Views\RelevantDocumentView.xaml;
 
-True
+False
 

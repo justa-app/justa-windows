@@ -12,5 +12,12 @@ namespace WindowsApplication
         {
             InitializeComponent();
         }
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+            ChatWindow chatWindow = new ChatWindow();
+            chatWindow.Show();
+            this.Hide();
+        }
     }
 }
