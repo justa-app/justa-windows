@@ -25,7 +25,7 @@ namespace WindowsApplication
 
 
         private void Start_Click(object sender, RoutedEventArgs e)
-        {
+        {            
             chatWindow.Top = this.Top;
             chatWindow.Left = this.Left;
             chatWindow.question.Text = question;

@@ -80,6 +80,7 @@
 	<Content Include="Assets\bubble-chat_153X153.gif">
 		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</Content>
+	<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	<Resource Include="Assets\expert.png">
 		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</Resource>

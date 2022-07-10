@@ -10,8 +10,8 @@
              Background="Transparent"
              WindowStyle="None"
              ShowInTaskbar="False"
-             SizeToContent="WidthAndHeight"
-             LostFocus="Window_LostFocus">
+             SizeToContent="WidthAndHeight">
+         <!--LostFocus="Window_LostFocus"-->        
 
     <Grid>
         <Grid.RowDefinitions>
@@ -66,7 +66,7 @@
                            Text="Hey, I have a question about GDPR, Can you help me please?"/>
                 <Line Grid.Row="2" StrokeThickness="4" Stroke="White" Margin="0,2" X1="30" X2="310"/>
                 <ScrollViewer Grid.Row="3">
-                    <Grid>
+                    <Grid x:Name="chatGrid">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="Auto"/>
@@ -103,7 +103,8 @@
                     <StackPanel Grid.Column="1" Orientation="Horizontal">
                         <Image Source="pack://application:,,,/Assets/clip.png" Width="12" Margin="4"/>
                         <Image Source="pack://application:,,,/Assets/at.png" Width="12" Margin="4"/>
-                        <Button Width="12" Margin="4" Background="Transparent" BorderThickness="0">
+                        <Button Width="12" Margin="4" Background="Transparent" BorderThickness="0"
+                                Click="Button_Click">
                             <Button.Content>
                                 <Image Source="pack://application:,,,/Assets/send.png"/>
                             </Button.Content>
