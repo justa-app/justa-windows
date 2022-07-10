@@ -105,6 +105,15 @@ namespace WindowsApplication
             _startPoint = e.GetPosition(null);
         }
 
+        private void Main_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            Application.Current.Windows.OfType<Window>().
+                ToList().ForEach(w => {
+                    if(w != this)
+                        w.Visibility = Visibility.Hidden;
+                });
+        }
+
         void Icon_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             Point position = e.GetPosition(null);

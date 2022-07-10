@@ -35,6 +35,8 @@ namespace WindowsApplication
             ((StackPanel)mainWindow.Content).Children.OfType<StackPanel>()
                 .ToList()
                 .ForEach(u => u.Visibility = Visibility.Hidden);
+            startSessionControl.Top = mainWindow.Top;
+            startSessionControl.Left = mainWindow.Left;
             startSessionControl.Show();
         }
     }
