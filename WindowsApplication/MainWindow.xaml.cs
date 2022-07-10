@@ -89,6 +89,11 @@ namespace WindowsApplication
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             new Thread(_model.unregisterFocusChangeHandler).Start();
+            Application.Current.Windows.OfType<Window>().
+                ToList().ForEach(w => {
+                    if (w != this)
+                    w.Close();
+                 });
         }
 
         Point _startPoint;
