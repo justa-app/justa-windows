@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/justasleep.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/bubble-chat_153x153.gif")]
 
 

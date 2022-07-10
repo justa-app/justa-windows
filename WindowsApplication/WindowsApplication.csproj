@@ -24,7 +24,7 @@
     <None Remove="Assets\person-icon-expert.png" />
     <None Remove="Assets\SharePoint_logo.png" />
 	<None Remove="Assets\ArrowButton.png" />
-	<None Remove="Assets\bubble-chat.png" />
+	<None Remove="Assets\bubble-chat_153X153.gif" />
 	<None Remove="Assets\StartArrow.png" />
 	<None Remove="Assets\expert.png" />
 	<None Remove="Assets\blue-arrow.png" />
@@ -77,9 +77,9 @@
 	<Resource Include="Assets\StartArrow.png">
 		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</Resource>
-	<Resource Include="Assets\bubble-chat.png">
+	<Content Include="Assets\bubble-chat_153X153.gif">
 		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	</Resource>
+	</Content>
 	<Resource Include="Assets\expert.png">
 		<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</Resource>
