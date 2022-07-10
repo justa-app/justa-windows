@@ -60,7 +60,7 @@
                            Width="18" Height="14" Margin="30,0"/>
 
                 </StackPanel>
-                <TextBlock Grid.Row="1" 
+                <TextBlock x:Name="question" Grid.Row="1" 
                            Background="#261977" Foreground="White" Padding="6" 
                            TextWrapping="WrapWithOverflow" Margin="25,10,70,10"
                            Text="Hey, I have a question about GDPR, Can you help me please?"/>

@@ -9,6 +9,8 @@ namespace WindowsApplication
     /// </summary>
     public partial class StartSessionUserControl : Window
     {
+        string initialMessage = "Hi, I'm looking for information on ...";
+        string question = "";
         StartSessionViewModel _model;
         ChatWindow chatWindow;
 
@@ -26,6 +28,7 @@ namespace WindowsApplication
         {
             chatWindow.Top = this.Top;
             chatWindow.Left = this.Left;
+            chatWindow.question.Text = question;
             chatWindow.Show();
             this.Hide();
         }
@@ -39,7 +42,8 @@ namespace WindowsApplication
 
         private void message_LostFocus(object sender, RoutedEventArgs e)
         {
-            message.Text = "Hi, I'm looking for information on ...";
+            question = message.Text;
+            message.Text = initialMessage;
             message.Foreground = Brushes.LightGray;
         }
     }
