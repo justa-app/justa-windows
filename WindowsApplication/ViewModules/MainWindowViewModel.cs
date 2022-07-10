@@ -9,6 +9,7 @@ using System.Windows.Automation;
 using System.Windows.Media.Imaging;
 using WindowsApplication.API;
 using WindowsApplication.AutomationHandlers;
+using WindowsApplication.Helpers;
 using WindowsApplication.Utilities;
 
 namespace WindowsApplication.ViewModules
@@ -98,41 +99,10 @@ namespace WindowsApplication.ViewModules
         }
 
         private void OnFocusChange(object src, AutomationFocusChangedEventArgs e)
-        {
-            // NOTE this function is called in a seperate thread so there is no side effects
-            // on the ui thread
+        {           
 
-            AutomationElement? sourceElement;
-            try
-            {
-                sourceElement = src as AutomationElement;
-                if (sourceElement == null)
-                {
-                    OutlookFocusHandler = null;
-                    return;
-                };
-
-                if (sourceElement.Current.ProcessId == Process.GetCurrentProcess().Id) return;
-
-                if (OutlookFocusHandler != null && OutlookFocusHandler.sourceElement == sourceElement) return;
-
-                if (OutlookFocusHandler.IsFocused(sourceElement))
-                {
-                    OutlookFocusHandler focusHandler = new OutlookFocusHandler(sourceElement, _textAction);
-                    if (OutlookFocusHandler != null) OutlookFocusHandler.OnLostFocus();
-                    OutlookFocusHandler = focusHandler;
-                    if (focusHandler != null) focusHandler.OnFocus();
-                } else
-                {
-                    if (OutlookFocusHandler != null) OutlookFocusHandler.OnLostFocus();
-                    OutlookFocusHandler = null;
-                }
-            }
-            catch (ElementNotAvailableException)
-            {
-                return;
-            }
-
+            OutlookFocusHandler = OutlookHelper.HandleOutlookFocuse(src, ref _outlookFocusHandler, ref _textAction);            
+            
         }
     }
 }

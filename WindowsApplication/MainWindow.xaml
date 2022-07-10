@@ -16,7 +16,8 @@
         SizeToContent="WidthAndHeight"    
         Loaded="Window_Loaded"
         Name="Main"
-        Closing="Window_Closing">
+        Closing="Window_Closing"
+        IsVisibleChanged="Main_IsVisibleChanged">
 
     <Window.Visibility>
         <Binding Path="HasOutlookFocusHandler" Converter="{StaticResource BooleanToVisibility}" Mode="TwoWay"/>
