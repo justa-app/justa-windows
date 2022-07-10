@@ -17,15 +17,10 @@ namespace WindowsApplication
             InitializeComponent();
             _model = new StartSessionViewModel();
             DataContext = _model;
-            new Thread(_model.registerFocusChangeHandler).Start();
             chatWindow = new ChatWindow();
             chatWindow.Hide();
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            new Thread(_model.unregisterFocusChangeHandler).Start();
-        }
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {

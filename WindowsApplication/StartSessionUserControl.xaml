@@ -12,13 +12,8 @@
              WindowStyle="None"
              ShowInTaskbar="False"
              SizeToContent="WidthAndHeight" 
-             Closing="Window_Closing"
              LostFocus="Window_LostFocus">
 
-    <Window.Visibility>
-        <Binding Path="HasOutlookFocusHandler" Converter="{StaticResource BooleanToVisibility}" Mode="TwoWay"/>
-    </Window.Visibility>
-    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
