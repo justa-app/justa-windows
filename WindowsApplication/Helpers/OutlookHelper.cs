@@ -12,7 +12,7 @@ namespace WindowsApplication.Helpers
     static class OutlookHelper
     {
 
-        public static bool HandleOutlookFocuse(object src, ref OutlookFocusHandler? outlookFocusHandler, ref Action<string> _textAction)
+        public static OutlookFocusHandler HandleOutlookFocuse(object src, ref OutlookFocusHandler? outlookFocusHandler, ref Action<string> _textAction)
         {
             AutomationElement? sourceElement;
             try
@@ -21,14 +21,14 @@ namespace WindowsApplication.Helpers
                 if (sourceElement == null)
                 {
                     outlookFocusHandler = null;
-                    return outlookFocusHandler != null;
+                    return outlookFocusHandler;
                 }
 
                 if (sourceElement.Current.ProcessId == Process.GetCurrentProcess().Id)
-                    return outlookFocusHandler != null;
+                    return outlookFocusHandler;
 
                 if (outlookFocusHandler != null && outlookFocusHandler.sourceElement == sourceElement)
-                    return outlookFocusHandler != null;
+                    return outlookFocusHandler;
 
                 if (OutlookFocusHandler.IsFocused(sourceElement))
                 {
@@ -50,10 +50,10 @@ namespace WindowsApplication.Helpers
             }
             catch (ElementNotAvailableException)
             {
-                return outlookFocusHandler != null;
+                return outlookFocusHandler;
             }
 
-            return outlookFocusHandler != null;
+            return outlookFocusHandler;
 
         }
     }
