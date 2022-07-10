@@ -534,3 +534,4 @@ C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ref\WindowsApplication.dll
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ChatWindow.baml
 C:\projects\justa-windows\WindowsApplication\obj\Release\net6.0-windows\win-x64\ChatWindow.g.cs
+C:\projects\justa-windows\WindowsApplication\bin\Release\net6.0-windows\win-x64\Assets\bubble-chat_153X153.gif

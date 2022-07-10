@@ -96,8 +96,10 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="0" Width="200" Text="Type your message here..." 
-                             Foreground="LightGray" BorderThickness="0" Margin="6,2" Padding="4"/>
+                    <TextBox x:Name="inputText" Grid.Column="0" Width="200" Text="Type your message here..." 
+                             Foreground="LightGray" BorderThickness="0" Margin="6,2" Padding="4"
+                             GotFocus="inputText_GotFocus"
+                             LostFocus="inputText_LostFocus" TextWrapping="Wrap"/>
                     <StackPanel Grid.Column="1" Orientation="Horizontal">
                         <Image Source="pack://application:,,,/Assets/clip.png" Width="12" Margin="4"/>
                         <Image Source="pack://application:,,,/Assets/at.png" Width="12" Margin="4"/>

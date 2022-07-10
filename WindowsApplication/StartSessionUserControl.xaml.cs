@@ -1,5 +1,5 @@
-﻿using System.Threading;
-using System.Windows;
+﻿using System.Windows;
+using System.Windows.Media;
 using WindowsApplication.ViewModules;
 
 namespace WindowsApplication
@@ -30,10 +30,17 @@ namespace WindowsApplication
             this.Hide();
         }
 
-        private void Window_LostFocus(object sender, RoutedEventArgs e)
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            message.Text = "";
+            message.Foreground = Brushes.Black;
         }
 
+        private void message_LostFocus(object sender, RoutedEventArgs e)
+        {
+            message.Text = "Hi, I'm looking for information on ...";
+            message.Foreground = Brushes.LightGray;
+        }
     }
 }
