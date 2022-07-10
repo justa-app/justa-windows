@@ -12,5 +12,10 @@ namespace WindowsApplication
         {
             InitializeComponent();
         }
+
+        private void Window_LostFocus(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

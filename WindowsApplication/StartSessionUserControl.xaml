@@ -11,8 +11,12 @@
              Background="Transparent"
              WindowStyle="None"
              ShowInTaskbar="False"
-             SizeToContent="WidthAndHeight"    >
+             SizeToContent="WidthAndHeight"  >
 
+    <Window.Visibility>
+        <Binding Path="HasOutlookFocusHandler" Converter="{StaticResource BooleanToVisibility}" Mode="TwoWay"/>
+    </Window.Visibility>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />

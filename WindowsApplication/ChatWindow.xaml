@@ -10,7 +10,8 @@
              Background="Transparent"
              WindowStyle="None"
              ShowInTaskbar="False"
-             SizeToContent="WidthAndHeight"    >
+             SizeToContent="WidthAndHeight"
+             LostFocus="Window_LostFocus">
 
     <Grid>
         <Grid.RowDefinitions>
