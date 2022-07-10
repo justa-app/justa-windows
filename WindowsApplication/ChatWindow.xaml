@@ -103,7 +103,11 @@
                     <StackPanel Grid.Column="1" Orientation="Horizontal">
                         <Image Source="pack://application:,,,/Assets/clip.png" Width="12" Margin="4"/>
                         <Image Source="pack://application:,,,/Assets/at.png" Width="12" Margin="4"/>
-                        <Image Source="pack://application:,,,/Assets/send.png" Width="12" Margin="4"/>
+                        <Button Width="12" Margin="4" Background="Transparent" BorderThickness="0">
+                            <Button.Content>
+                                <Image Source="pack://application:,,,/Assets/send.png"/>
+                            </Button.Content>
+                        </Button> 
                     </StackPanel>
                 </Grid>
             </Grid>
