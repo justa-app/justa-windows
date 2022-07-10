@@ -100,7 +100,7 @@ namespace WindowsApplication.ViewModules
 
         private void OnFocusChange(object src, AutomationFocusChangedEventArgs e)
         {
-            OutlookFocusHandler = OutlookHelper.HandleOutlookFocuse(src, ref _outlookFocusHandler, ref _textAction);
+            //OutlookFocusHandler = OutlookHelper.HandleOutlookFocuse(src, ref _outlookFocusHandler, ref _textAction);
         }
     }
 }

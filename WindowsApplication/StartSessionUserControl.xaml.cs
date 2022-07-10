@@ -10,6 +10,7 @@ namespace WindowsApplication
     public partial class StartSessionUserControl : Window
     {
         StartSessionViewModel _model;
+        ChatWindow chatWindow;
 
         public StartSessionUserControl()
         {
@@ -17,11 +18,17 @@ namespace WindowsApplication
             _model = new StartSessionViewModel();
             DataContext = _model;
             new Thread(_model.registerFocusChangeHandler).Start();
+            chatWindow = new ChatWindow();
+            chatWindow.Hide();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            new Thread(_model.unregisterFocusChangeHandler).Start();
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
-        {
-            ChatWindow chatWindow = new ChatWindow();
+        {            
             chatWindow.Show();
             this.Hide();
         }
@@ -31,9 +38,5 @@ namespace WindowsApplication
             this.Hide();
         }
 
-        private void Grid_LostKeyboardFocus(object sender, System.Windows.Input.KeyboardFocusChangedEventArgs e)
-        {
-            this.Hide();
-        }
     }
 }

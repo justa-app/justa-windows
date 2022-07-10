@@ -11,7 +11,9 @@
              Background="Transparent"
              WindowStyle="None"
              ShowInTaskbar="False"
-             SizeToContent="WidthAndHeight"  >
+             SizeToContent="WidthAndHeight" 
+             Closing="Window_Closing"
+             LostFocus="Window_LostFocus">
 
     <Window.Visibility>
         <Binding Path="HasOutlookFocusHandler" Converter="{StaticResource BooleanToVisibility}" Mode="TwoWay"/>

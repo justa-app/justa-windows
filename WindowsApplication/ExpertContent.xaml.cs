@@ -25,13 +25,16 @@ namespace WindowsApplication
         public ExpertContent()
         {
             InitializeComponent();
+            startSessionControl = new StartSessionUserControl();
+            startSessionControl.Hide();
         }
 
         private void StartSessionButton_Click(object sender, RoutedEventArgs e)
         {
             Window mainWindow = Application.Current.MainWindow;
-            mainWindow.Hide();
-            startSessionControl = new StartSessionUserControl();
+            ((StackPanel)mainWindow.Content).Children.OfType<StackPanel>()
+                .ToList()
+                .ForEach(u => u.Visibility = Visibility.Hidden);
             startSessionControl.Show();
         }
     }
